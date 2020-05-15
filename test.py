@@ -2,6 +2,8 @@ colors = ["red", "blue", "yellow", "green", "purple"]
 index = -1
 program_loop = True
 
+#loops runs until user types 'exit'
+#user will be promted to add or remove colors from list
 while(program_loop == True):
     for y in colors:
         index += 1
@@ -25,6 +27,5 @@ while(program_loop == True):
     
     else:
         print("\n**Unknown command**\n")
-        
 
-    index = -1
+    index = -1 #resets index variable to get proper list elements
