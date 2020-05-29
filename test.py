@@ -2,6 +2,8 @@ colors = ["red", "blue", "yellow", "green", "purple"]
 index = -1
 program_loop = True
 
+print("\n")
+
 #loops runs until user types 'exit'
 #user will be promted to add or remove colors from list
 while(program_loop == True):
@@ -12,11 +14,13 @@ while(program_loop == True):
     add_or_delete = input("(add or delete?): ")
     if(add_or_delete == "add"):
         added_color = input("Color to add: ")
+        print("\n")
         lwr_case_added_color = added_color.lower()
         colors.append(lwr_case_added_color)
         
     elif(add_or_delete == "del"):
         index = input("What index would you like to delete: ")
+        print("\n")
         index = int(index)
         colors.pop(index)
 
